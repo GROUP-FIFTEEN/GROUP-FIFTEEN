@@ -1,4 +1,4 @@
-### Hi there 👋
+### MediConnect Online Medical Services 👋
 
 <!--
 **GROUP-FIFTEEN/GROUP-FIFTEEN** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
