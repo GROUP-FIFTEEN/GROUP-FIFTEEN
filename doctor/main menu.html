@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title> MediConnect Online Medical Services </title>
+
+	<!-- Meta-Tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link href="../css/style.css" type="text/css" rel="stylesheet">
+	<style type="text/css">
+		li {}
+
+		body {}
+
+		#navlist li {
+			background-color: turquoise;
+			color: black;
+			align: center;
+			padding: .2em 1em;
+			align: center;
+		}
+
+		table {
+			margin: 50px;
+			padding: 20px;
+			left: 10px;
+			border: 1.1 px solid #111;
+			padding: 5px;
+			background-color: skyblue;
+		}
+
+		a:visited {
+			color: blue;
+		}
+
+		a:link {
+			color: blue;
+		}
+	</style>
+
+
+
+</head>
+
+<body>
+
+	<div class="top">
+		<div>
+			+265992453357 | mediconnect@medicine.com
+		</div>
+	</div>
+
+	<div class="logo">
+		<div>
+			<table>
+				<tr>
+					<td width="600px" style="font-size:50px;font-family:forte;">
+						<font color="#428bca"> Medi </font>
+						<font color="#4dec7d"> Connect</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div align="center">
+		DOCTORS MAIN PAGE
+	</div>
+	<table>
+		<ol type="I" id="navlist">
+			<tr>
+				<td>
+					<li><a href="#Register patient"> Register patient </a></li>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<li><a href="#search patient record"> View health record </a></li>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<li><a href="#search room"> Book a room for a patient </a></li>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<li><a href="#search patient record"> Edit patient health record </a></li>
+				</td>
+			</tr>
+		</ol>
+	</table>
+
+	<div id="Register patient">
+		<table border="0">
+			<tr>
+				<th colspan="5">Register patient into the Health System
+					<br>
+					<br>
+				</th>
+			</tr>
+
+			<tr>
+				<td colspan="5">PAITENT PERSONAL DETAILS </br></td>
+			</tr>
+			<tr>
+				<td>Patient ID</td>
+				<td><input type="text" name="ID"></td>
+			</tr>
+			<tr>
+				<td>FirstName </td>
+				<td><input type="text" name="First name"></td>
+			</tr>
+			<tr>
+				<td><br>Surname </td>
+				<td><br><input type="text" name="Surname"></td>
+			</tr>
+			<tr>
+				<td>Home Address</td>
+				<td>
+					<input type="text" name="Address">
+				</td>
+			</tr>
+			<tr>
+				<td>Sex</td>
+				<td>
+					<select>
+						<option value="male">male</option>
+						<option value="female">female</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+			<tr>
+				<td>Diagnosis </td>
+				<td><input type="text" name="Diagnosis"></td>
+			</tr>
+			<tr>
+				<td>Admission </td>
+				<td>
+					<select>
+						<option value="male"> in patient</option>
+						<option value="out-patient"> out patient</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="5">LOGIN DETAILS</br>
+				<td>
+			</tr>
+
+			<tr>
+				<td>Username</td>
+				<td><input type="text" name="Username"></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="Password"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="5"><input type="button" value="register"
+						onclick="window.alert('Patient registered Successfully')"></input>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="search patient record">
+		Enter the details of the Patient you want to find</br>
+		<form>
+			<table>
+				<tr>
+					<td>first name</td>
+					<td><input type="text" name="name"></td>
+				</tr>
+				<tr>
+					<td>surname</td>
+					<td><input type="text" name="surname"></td>
+				</tr>
+				<tr>
+					<td>Patient ID</td>
+					<td><input type="text" name="ID"></td>
+				</tr>
+				<tr>
+					<td><button> <a href="Edit  health record.html"> SEARCH </a> </button></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+	<div id="search room">
+		<table>
+			<tr>
+				<th>Name</th>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<th>Diagnosis</th>
+				<td><input type="text" name="Diagnosis"></td>
+			</tr>
+			<tr>
+				<th>Sex</th>
+				<td>
+					<select>
+						<option value="male">male</option>
+						<option value="female">female</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th><button> <a href="available rooms.html"> SEARCH </a> </button></th>
+			</tr>
+
+
+		</table>
+	</div>
+
+	<div id="search patient record">
+		div>These are the Personal Details of the Patient you searched for</div>
+	<table border="3">
+
+		<tr>
+			<th>FIRST NAME </th>
+			<td>Peter</td>
+		</tr>
+		<tr>
+			<th>SURNAME</th>
+			<td>Nyirenda</td>
+		</tr>
+		<tr>
+			<th> SEX </th>
+			<td>Male</td>
+		</tr>
+		<tr>
+			<th> ID</th>
+			<td>CIS-</td>
+		</tr>
+
+	</table>
+
+	<div>These are the recent Medical Records of the Patient</div>
+	<table>
+		<tr>
+			<th>Reference ID</th>
+			<th> DIAGNOSIS </th>
+			<th> TREATMENT </th>
+			<th> DOCTOR'S NAME</th>
+			<th> DOCTOR ID </th>
+			<th>ADMITTED</th>
+			<th>ADMISSION TIME <br> (DAYS)</th>
+
+		</tr>
+		<tr>
+			<td>cons1000</td>
+			<td>Malaria</td>
+			<td>LA</td>
+			<td>Matthews Gondwe</td>
+			<td> DOC001</td>
+			<td>YES</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>cons2000</td>
+			<td>Flu</td>
+			<td>panado</td>
+			<td>Matthews Gondwe</td>
+			<td> DOC001</td>
+			<td>No</td>
+			<td>N/A</td>
+
+		</tr>
+	</table>
+
+	<form>
+		<div>Enter the reference Number of the record you want to Edit</div>
+		<table text-align="left">
+			<tr>
+				<th>Reference</th>
+				<td><input type="reference" name="Reference"></td>
+			<tr>
+				<th>DIAGNOSIS</th>
+				<td><input type="text" name="DIAGNOSIS"></td>
+			</tr>
+			<tr>
+				<th> TREATMENT </th>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<th> DOCTOR'S NAME</th>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<th> DOCTOR ID </th>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<th>ADMITTED</th>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<th>ADMISSION TIME <br> (DAYS)</th>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td><button> SAVE CHANGES </button></td>
+			</tr>
+		</table>
+
+	</form>
+	</div>
+	<footer></footer>
+</body>
