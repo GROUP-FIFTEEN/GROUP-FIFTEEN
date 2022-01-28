@@ -80,17 +80,17 @@
 			</tr>
 			<tr>
 				<td>
-					<li><a href="#search patient record"> View health record </a></li>
+					<li><a href="#records"> View health record </a></li>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<li><a href="#search room"> Book a room for a patient </a></li>
+					<li><a href="#room"> search for the room </a></li>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<li><a href="#search patient record"> Edit patient health record </a></li>
+					<li><a href="#edit"> Edit patient health record </a></li>
 				</td>
 			</tr>
 		</ol>
@@ -171,7 +171,7 @@
 		</table>
 	</div>
 
-	<div id="search patient record">
+	<div id="records">
 		Enter the details of the Patient you want to find</br>
 		<form>
 			<table>
@@ -187,19 +187,7 @@
 					<td>Patient ID</td>
 					<td><input type="text" name="ID"></td>
 				</tr>
-				<tr>
-					<td><button> <a href="Edit  health record.html"> SEARCH </a> </button></td>
-				</tr>
-			</table>
-		</form>
-	</div>
-
-	<div id="search room">
-		<table>
-			<tr>
-				<th>Name</th>
-				<td><input type="text" name="name"></td>
-			</tr>
+			
 			<tr>
 				<th>Diagnosis</th>
 				<td><input type="text" name="Diagnosis"></td>
@@ -214,105 +202,76 @@
 				</td>
 			</tr>
 			<tr>
-				<th><button> <a href="available rooms.html"> SEARCH </a> </button></th>
+				<td><button> <a href="search.html"> SEARCH </a> </button></td>
 			</tr>
-
-
 		</table>
 	</div>
 
-	<div id="search patient record">
-		div>These are the Personal Details of the Patient you searched for</div>
-	<table border="3">
-
-		<tr>
-			<th>FIRST NAME </th>
-			<td>Peter</td>
-		</tr>
-		<tr>
-			<th>SURNAME</th>
-			<td>Nyirenda</td>
-		</tr>
-		<tr>
-			<th> SEX </th>
-			<td>Male</td>
-		</tr>
-		<tr>
-			<th> ID</th>
-			<td>CIS-</td>
-		</tr>
-
-	</table>
-
-	<div>These are the recent Medical Records of the Patient</div>
-	<table>
-		<tr>
-			<th>Reference ID</th>
-			<th> DIAGNOSIS </th>
-			<th> TREATMENT </th>
-			<th> DOCTOR'S NAME</th>
-			<th> DOCTOR ID </th>
-			<th>ADMITTED</th>
-			<th>ADMISSION TIME <br> (DAYS)</th>
-
-		</tr>
-		<tr>
-			<td>cons1000</td>
-			<td>Malaria</td>
-			<td>LA</td>
-			<td>Matthews Gondwe</td>
-			<td> DOC001</td>
-			<td>YES</td>
-			<td>2</td>
-		</tr>
-		<tr>
-			<td>cons2000</td>
-			<td>Flu</td>
-			<td>panado</td>
-			<td>Matthews Gondwe</td>
-			<td> DOC001</td>
-			<td>No</td>
-			<td>N/A</td>
-
-		</tr>
-	</table>
-
-	<form>
-		<div>Enter the reference Number of the record you want to Edit</div>
-		<table text-align="left">
-			<tr>
-				<th>Reference</th>
-				<td><input type="reference" name="Reference"></td>
-			<tr>
-				<th>DIAGNOSIS</th>
-				<td><input type="text" name="DIAGNOSIS"></td>
-			</tr>
-			<tr>
-				<th> TREATMENT </th>
-				<td><input type="text"></td>
-			</tr>
-			<tr>
-				<th> DOCTOR'S NAME</th>
-				<td><input type="text"></td>
-			</tr>
-			<tr>
-				<th> DOCTOR ID </th>
-				<td><input type="text"></td>
-			</tr>
-			<tr>
-				<th>ADMITTED</th>
-				<td><input type="text"></td>
-			</tr>
-			<tr>
-				<th>ADMISSION TIME <br> (DAYS)</th>
-				<td><input type="text"></td>
-			</tr>
-			<tr>
-				<td><button> SAVE CHANGES </button></td>
-			</tr>
-		</table>
-
-	</form>
+	<div id="room">
+		<form>
+			<table>
+				<tr>
+					<td>Patient name</td>
+					<td><input type="text" name="name"></td>
+				</tr>
+				<tr>
+					<th>Sex</th>
+					<td>
+						<select>
+							<option value="male">male</option>
+							<option value="female">female</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Room To Be allocated</td>
+					<td><input type="text" name="name"></td>
+				</tr>
+				<tr>
+					<td><button> <a href="search.html"> SEARCH </a> </button></td>
+				</tr>
+			</table>
+		</form>
 	</div>
-	<footer></footer>
+
+	<div id="edit">
+		<form>
+			<div>Enter the reference Number of the record you want to Edit</div>
+			<table text-align="left">
+				<tr>
+					<th>Reference</th>
+					<td><input type="reference" name="Reference"></td>
+				<tr>
+					<th>DIAGNOSIS</th>
+					<td><input type="text" name="DIAGNOSIS"></td>
+				</tr>
+				<tr>
+					<th> TREATMENT </th>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<th> DOCTOR'S NAME</th>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<th> DOCTOR ID </th>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<th>ADMITTED</th>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<th>ADMISSION TIME <br> (DAYS)</th>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><button> <a href="recentRecords.html"> SAVE CHANGES </a> </button></td>
+				</tr>
+			</table>
+	
+		</form>
+	</div>
+	
 </body>
+</html>
